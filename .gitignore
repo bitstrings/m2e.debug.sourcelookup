@@ -1,0 +1,16 @@
+.classpath
+.project
+.settings
+target
+bin
+*.iml
+*.ipr
+*.iws
+.idea
+*.exe
+.factorypath
+test-output
+.~lock.*
+.timestamp*
+/work
+.groovy

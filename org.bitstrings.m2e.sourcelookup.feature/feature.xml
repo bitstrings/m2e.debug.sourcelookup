@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.bitstrings.m2e.sourcelookup.feature"
+      label="%feature.name"
+      version="1.0.0.qualifier"
+      provider-name="%feature.vendor">
+
+   <description>
+      %feature.description.text
+   </description>
+
+   <copyright>
+      %feature.copyright.text
+   </copyright>
+
+   <license url="%feature.license.url">
+      %feature.license.text
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.jdt" version="3.9.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.m2e.feature" version="1.1.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="org.bitstrings.m2e.sourcelookup"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+</feature>

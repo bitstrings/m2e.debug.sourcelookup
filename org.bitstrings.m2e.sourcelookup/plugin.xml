@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin>
+   <extension point="org.eclipse.debug.core.sourceContainerTypes">
+      <sourceContainerType
+            id="org.bitstrings.m2e.sourcelookup.MavenSourceContainerType"
+            class="org.bitstrings.m2e.sourcelookup.MavenSourceContainerTypeDelegate"
+            name="%sourceContainerType.name">
+      </sourceContainerType>
+   </extension>
+
+<!--
+   <extension
+         point="org.eclipse.debug.ui.sourceContainerPresentations">
+      <sourceContainerPresentation
+            browserClass="org.bitstrings.m2e.sourcelookup.MyMvnSourceContainerBrowser"
+            containerTypeID="org.bitstrings.m2e.sourcelookup.MyMvnSourceContainerType"
+            icon="/icons/mvncontainer.gif"
+            id="m2e.sourcelookup.MyMvnSourceContainerBrowser">
+      </sourceContainerPresentation>
+   </extension>
+-->
+
+   <extension point="org.eclipse.debug.core.sourceLocators">
+      <sourceLocator
+            id="org.eclipse.m2e.launching.MavenSourceLocator"
+            class="org.bitstrings.m2e.sourcelookup.MavenSourceLocator"
+            name="%sourceLocator.name">
+      </sourceLocator>
+   </extension>
+
+   <extension point="org.eclipse.debug.core.launchDelegates">
+       <launchDelegate
+             id="org.bitstrings.m2e.sourcelookup.MavenAwareRemoteJavaLaunchDelegate"
+             delegate="org.bitstrings.m2e.sourcelookup.MavenAwareRemoteJavaLaunchDelegate"
+             type="org.eclipse.jdt.launching.remoteJavaApplication"
+             name="%launchDelegate.name">
+          <modeCombination modes="debug"/>
+       </launchDelegate>
+   </extension>
+</plugin>
