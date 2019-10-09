@@ -94,7 +94,7 @@ public final class SourceContainerHelper
 
         for ( int index = 0 ; index < additions.size(); index++ )
         {
-            sourceContainers[index++] = new ProjectSourceContainer( additionsIter.next(), true );
+            sourceContainers[index] = new ProjectSourceContainer( additionsIter.next(), true );
         }
 
         return sourceContainers;
